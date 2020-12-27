@@ -28,7 +28,8 @@ def get_gpx(request, login_resp, user, workout):
     logging.info(workout_url)
     file2 = open(f'{workout["id"]}.gpx', 'w+')
     file2.write(gpx.text)
-    file2.close()    
+    file2.close()
+
 
 def history(request, login_resp, endo):
     continue_flag = True
@@ -61,9 +62,9 @@ def main():
     parser.add_argument('-v', dest='verbose', action='store_true',
                         help='Increase verbosity (logs all data going through)')
     parser.add_argument('-u', dest='user',
-                        help='Endomondo user')
+                        help='Endomondo user', required=True)
     parser.add_argument('-p', dest='password',
-                        help='Endomondo password')
+                        help='Endomondo password', required=True)
     args = parser.parse_args()
 
     logging.basicConfig(
