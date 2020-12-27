@@ -11,16 +11,16 @@ The script  may be used to backup the complete workout history:
 
     python export.py -u user_email -p user_password
 
-usage: export.py [-h] [-v] [-u USER] [-p PASSWORD]
+    usage: export.py [-h] [-v] [-u USER] [-p PASSWORD]
 
-Endomondo data export
+    Endomondo data export
 
-optional arguments:
-  -h, --help   show this help message and exit
-  -v           Increase verbosity (logs all data going through) (default:
-               False)
-  -u USER      Endomondo user (default: None)
-  -p PASSWORD  Endomondo password (default: None)
+    optional arguments:
+      -h, --help   show this help message and exit
+      -v           Increase verbosity (logs all data going through) (default:
+                   False)
+      -u USER      Endomondo user (default: None)
+      -p PASSWORD  Endomondo password (default: None)
 
 
 Requirements
